@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <!-- action : represents action to be performed once we submit the form
+    method : get(default : data will be visible in the URL , so it is not secured) and post(data willnot be visible in the URL , so it is secured) -->
+    <!-- type : type of data
+    for(label) and id(input) : to link the label with input
+    name : the value of name attribute acts like a variable to store the data entered in the textfield -->
+    <form action="" method="post">
+        <fieldset>
+        <legend>PERSONAL DETAILS : </legend>
+        <label for="uname">USERNAME : </label>
+        <input type="text" id="uname" name="user" size="40" placeholder="CAPITAL LETTERS ONLY" autofocus><br><br>
+
+        <label for="pwd">PASSWORD : </label>
+        <input type="password" id="pwd" name="password" minlength="8" required><br><br>
+
+        <label for="mail">EMAIL : </label>
+        <input type="email" name="mail" id="mail"><br><br>
+
+        <label for="dob">DOB : </label>
+        <input type="date" name="dob" id="dob"><br><br>
+
+        <label for="age">AGE : </label>
+        <input type="number" name="age" id="age" min="25" max="40"><br><br>
+
+        <label for="contact">CONTACT NUMBER : </label>
+        <input type="tel" name="contact" id="contact" maxlength="10" minlength="10"><br><br>
+
+        <label for="gen">GENDER : </label>
+        <input type="radio" name="gen" id="gen" value="MALE">MALE
+        <input type="radio" name="gen" id="gen" value="FEMALE" disabled>FEMALE
+        <input type="radio" name="gen" id="gen" value="OTHERS" disabled>OTHERS <br><br>
+
+        <label for="languages">LANGUAGES KNOWN : </label>
+        <input type="checkbox" name="languages" id="languages" value="ENGLISH">ENGLISH
+        <input type="checkbox" name="languages" id="languages" value="KANNADA">KANNADA
+        <input type="checkbox" name="languages" id="languages" value="HINDI">HINDI
+        <input type="checkbox" name="languages" id="languages" value="MARATHI">MARATHI
+        <input type="checkbox" name="languages" id="languages" value="TELUGU">TELUGU
+        <input type="checkbox" name="languages" id="languages" value="TAMIL">TAMIL
+        <input type="checkbox" name="languages" id="languages" value="GUJARATHI">GUJARATHI
+        <input type="checkbox" name="languages" id="languages" value="MALAYALAM">MALAYALAM <br><br>
+
+        <label for="resume">RESUME : </label>
+        <input type="file" name="resume" id="resume" multiple><br><br>
+        </fieldset>
+
+        <fieldset>
+        <legend>ADDRESS DETAILS : </legend>
+        <label for="address">ADDRESS : </label>
+        <textarea name="address" id="address"></textarea><br><br>
+
+        <label for="state">STATE : </label>
+        <select name="state" id="state">
+            <option value="KAR">KAR</option>
+            <option value="TEL">TEL</option>
+            <option value="MAH">MAH</option>
+            <option value="KERALA">KERALA</option>
+        </select><br><br>
+
+        <label for="city">CITY : </label>
+        <select name="city" id="city">
+            <optgroup label="KAR">
+                <option value="BNG">BNG</option>
+                <option value="MYSORE">MYSORE</option>
+                <option value="TUMKUR">TUMKUR</option>
+            </optgroup>
+            <optgroup label="TEL">
+                <option value="HYD">HYD</option>
+                <option value="TIRUPATHI">TIRUPATHI</option>
+                <option value="WARANGAL">WARANGAL</option>
+            </optgroup>
+            <optgroup label="MAH">
+                <option value="PUNE">PUNE</option>
+                <option value="MUMBAI">MUMBAI</option>
+                <option value="THANE">THANE</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="q">QUALIFICATION : </label>
+        <input type="text" name="q" id="q" list="qualification">
+        <datalist id="qualification">
+            <option value="BE">BE</option>
+            <option value="BTECH">BTECH</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="MBA">MBA</option>
+        </datalist><br><br>
+
+        <label for="COMPANY">COMPANY : </label>
+        <input type="text" name="COMPANY" id="COMPANY" value="CNX" readonly>
+        </fieldset>
+
+        <input type="image" src="https://tse4.mm.bing.net/th/id/OIP.aO4yrDHedznhRKlkiifN0gHaE8?pid=Api&P=0&h=180" height="50px" width="100px" >
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html> 
