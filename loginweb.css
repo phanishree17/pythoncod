@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form_blk{
+    height: 500px;
+    width: 380px;
+    background-image: linear-gradient(rgb(48, 48, 255),rgb(146, 146, 219),rgb(231, 112, 207));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#form_blk .heading{
+    /* border: 2px solid red; */
+    height: 30%;
+    width: 200px;
+    text-align: center;
+}
+#form_blk .heading img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#form_blk .heading h2{
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+}
+#form_blk .form{
+    /* border: 2px solid red; */
+    height: 40%;
+    width: 350px;
+}
+#form_blk .form form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#form_blk .form form input{
+    height: 30px;
+    width: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding:  20px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+#form_blk .form form input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+#form_blk .form form p{
+    color: white;
+}
+#form_blk .form form p input{
+    position: relative;
+    top: 10px;
+}
+#form_blk .fp{
+    /* border: 2px solid red; */
+    height: 10%;
+}
+#form_blk .fp p{
+    color: white;
+} 
